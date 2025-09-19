@@ -1,0 +1,19 @@
+# config/settings.yaml
+
+app:
+  name: DeadlineWatcher
+  check_interval_sec: 10
+  retry_delay_sec: 5
+  log_dir: "~/deadline_watcher/logs"
+  log_file: "watcher.log"
+  job_file: "~/deadline_watcher/jobs.json"
+  pid_file: "~/deadline_watcher/watcher.pid"
+  exe_file: "//192.168.10.190/substorage2/MTHD_core/standalone/exe/deadline_watcher.exe"
+
+deadline:
+  ip: "192.168.10.101"
+  port: 8081
+
+api:
+  host: "127.0.0.1"
+  port: 21040
